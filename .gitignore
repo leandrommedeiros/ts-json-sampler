@@ -1,0 +1,16 @@
+node_modules
+coverage
+dist
+logs
+ts-json-sampler-output
+ts-json-sampler
+
+# Mac garbage
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+*.pid
+*.log

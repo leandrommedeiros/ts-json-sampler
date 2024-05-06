@@ -1,0 +1,19 @@
+node_modules
+coverage
+bin
+build
+logs
+ts-json-sampler-output
+ts-json-sampler
+
+# Mac garbage
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+*.pid
+*.log
+.aider*
+.env

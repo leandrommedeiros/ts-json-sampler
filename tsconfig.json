@@ -15,7 +15,7 @@
     "alwaysStrict": true,
     "declaration": true,
     "emitDecoratorMetadata": true,
-    "esModuleInterop": false,
+    "esModuleInterop": true,
     "experimentalDecorators": true,
     "extendedDiagnostics": false,
     "forceConsistentCasingInFileNames": true,
@@ -31,6 +31,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "outDir": "./build",
+    "rootDir": "./src",
     "preserveConstEnums": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
@@ -39,6 +40,7 @@
     "strictFunctionTypes": true,
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
-    "target": "es2018"
+    "target": "es2022",
+    "types": ["node"]
   }
 }

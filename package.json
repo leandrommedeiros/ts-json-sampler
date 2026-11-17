@@ -1,6 +1,6 @@
 {
   "name": "@leandrommedeiros/ts-json-sampler",
-  "version": "0.0.8",
+  "version": "1.0.2",
   "description": "Generates sample JSON for selected types",
   "author": "Leandro Medeiros <leandro.medeiros@live.com>",
   "license": "BSD 2",

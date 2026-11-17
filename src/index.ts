@@ -21,6 +21,3 @@ export * from './Application/Service/Writer/FileWriter';
 export * from './Presentation/Cli/CliArguments';
 export * from './Presentation/Cli/CliProgram';
 export * from './Presentation/Cli/Error/InvalidPathArgumentError';
-
-// Binary
-export * from './ts-json-sampler-cli';

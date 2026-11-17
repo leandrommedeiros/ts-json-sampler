@@ -16,7 +16,7 @@ export class FileWriter {
   private static writeToFile(targetPath: string, outputFileName: string, sample: OutputSample): void {
     try {
       fs.mkdirSync(targetPath, { recursive: true });
-      fs.writeFileSync(`${targetPath}/${outputFileName}`, sample.toString(), {encoding:'utf8',flag:'w'});
+      fs.writeFileSync(`${targetPath}/${outputFileName}`, sample.toString(), { encoding: 'utf8', flag: 'w' });
     } catch (error) {
       console.log(c.red(`Error exporting sample to ${outputFileName}`));
       console.error(error);

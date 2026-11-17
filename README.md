@@ -1,7 +1,8 @@
 # ts-json-sampler
 
-[![npm version](https://badge.fury.io/js/%40leandrommedeiros%2Fts-json-sampler.svg)](https://badge.fury.io/js/%40leandrommedeiros%2Fts-json-sampler)
 [![License: BSD 2-Clause](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
+[![npm version](https://badge.fury.io/js/%40leandrommedeiros%2Fts-json-sampler.svg)](https://badge.fury.io/js/%40leandrommedeiros%2Fts-json-sampler)
+[![Publish](https://github.com/leandrommedeiros/ts-json-sampler/actions/workflows/publish.yml/badge.svg)](https://github.com/leandrommedeiros/ts-json-sampler/actions/workflows/publish.yml)
 
 `ts-json-sampler` is a TypeScript library and CLI tool that generates sample JSON for selected types. It is designed to be used both as a command-line tool and as a library in TypeScript/JavaScript projects.
 

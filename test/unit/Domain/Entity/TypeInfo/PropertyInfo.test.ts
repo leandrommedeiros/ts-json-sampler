@@ -9,7 +9,7 @@ describe('PropertyInfo', () => {
   });
 
   it('should return sample value from doc tags', () => {
-    const docTags: JSDocTagInfo[] = [{ name: 'sampleValue', text: [{ text: '42' }] }];
+    const docTags: JSDocTagInfo[] = [{ name: 'sampleValue', text: [{ text: '42', kind: 'text' }] }];
     expect(PropertyInfo.getSampleValue(docTags)).toBe('42');
   });
 });

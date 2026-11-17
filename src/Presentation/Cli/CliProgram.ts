@@ -4,7 +4,6 @@ import * as ts from 'typescript';
 import { FileScanner } from '../../Application/Service/Scanner/FileScanner';
 import { TypeScanner } from '../../Application/Service/Scanner/TypeScanner';
 import { InfoScanner } from '../../Application/Service/Scanner/InfoScanner';
-import { TypeInfo } from '../../Domain/Entity/TypeInfo/TypeInfo';
 import { SamplerService } from '../../Application/Service/SamplerService';
 import { CliArguments } from './CliArguments';
 import { FileWriter } from '../../Application/Service/Writer/FileWriter';
@@ -32,7 +31,7 @@ export class CliProgram {
         return {
           name: typeName,
           properties: InfoScanner.extractInfo(program.getTypeChecker(), typeName, typeNode),
-        } as TypeInfo;
+        };
       },
     );
 

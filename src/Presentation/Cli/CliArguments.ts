@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import * as yargs from 'yargs';
+import yargs from 'yargs';
 import * as c from 'ansi-colors';
 import { hideBin } from 'yargs/helpers';
 import { InvalidPathArgumentError } from './Error/InvalidPathArgumentError';

@@ -1,14 +1,18 @@
 import { FileScanner } from '../../../../../src';
 
 import * as fs from 'fs';
+import * as os from 'os';
+import * as path from 'path';
 
 describe('FileScanner', () => {
   it('should scan a directory and return file paths', () => {
-    const mockReaddirSync = jest.spyOn(fs, 'readdirSync').mockReturnValue(['file1.ts', 'file2.ts']);
-    const mockStatSync = jest.spyOn(fs, 'statSync').mockReturnValue({ isDirectory: () => false } as fs.Stats);
-    const result = FileScanner.scanDirectory('/mock/path', []);
-    expect(result).toEqual(['/mock/path/file1.ts', '/mock/path/file2.ts']);
-    mockReaddirSync.mockRestore();
-    mockStatSync.mockRestore();
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'ts-json-sampler-'));
+    fs.writeFileSync(path.join(dir, 'file1.ts'), '');
+    fs.writeFileSync(path.join(dir, 'file2.ts'), '');
+
+    const result = FileScanner.scanDirectory(dir, []);
+
+    expect(result.sort()).toEqual([path.join(dir, 'file1.ts'), path.join(dir, 'file2.ts')]);
+    fs.rmSync(dir, { recursive: true, force: true });
   });
 });
